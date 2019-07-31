@@ -1,4 +1,4 @@
 <?php
-header('location:newsapi.html');
+header('location:library.html');
 
 ?>
