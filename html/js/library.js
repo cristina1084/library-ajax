@@ -21,7 +21,7 @@ $(document).ready(function(){             //jQuery
                         card+="<div class='card-body'> <h5 class='card-title'>"+ data[j].bookTitle +"</h5>";
                         card+="<h6 class='card-subtitle mb-2 text-muted'>" + data[j].author +"</h6> ";
                         card+="<p class='card-text text-justify'>"+ data[j].description + "</p> </div>";
-                        card+="<div class='card-footer'>"+ data[j].price+"</div></div></div> <br>";
+                        card+="<div class='card-footer text-center'> &#x20b9; "+ data[j].price+"</div></div></div> <br>";
                     }
                 }
                 card+="</div>";
