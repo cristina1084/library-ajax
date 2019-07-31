@@ -10,9 +10,8 @@ $(document).ready(function(){             //jQuery
             },
             success : function(data){
                 $("#load").hide();
-                console.log(data);
+                /* console.log(data); */
                 console.log(cat);
-                
                 var card="<div class='card-deck'>";
                 for (var j in data){
                     if (cat == data[j].genre)
