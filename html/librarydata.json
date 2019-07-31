@@ -2,15 +2,15 @@
     "bookTitle":"Recursion",
     "author":"Blake Crouch",
     "genre":"Thriller",
-    "description":"Thriller",
+    "description":"That’s what New York City cop Barry Sutton is learning as he investigates the devastating phenomenon the media has dubbed False Memory Syndrome—a mysterious affliction that drives its victims mad with memories of a life they never lived.",
     "price":0,
-    "urlToImage":""
+    "urlToImage":"https://images-na.ssl-images-amazon.com/images/I/81E0o11MkdL.jpg"
 },
 {
-    "bookTitle":"Recursion",
-    "author":"Blake Crouch",
+    "bookTitle":"The Last House Guest",
+    "author":" Megan Miranda",
     "genre":"Thriller",
-    "description":"",
+    "description":"Littleport, Maine is like two separate towns: a vacation paradise for wealthy holidaymakers and a simple harbour community for the residents who serve them. Friendships between locals and visitors are unheard of - but that's just what happened with Avery Greer and Sadie Loman.",
     "price":0,
-    "urlToImage":""
+    "urlToImage":"https://images-eu.ssl-images-amazon.com/images/I/51oUPwdYMSL.jpg"
 }]

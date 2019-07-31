@@ -1,6 +1,6 @@
 $(document).ready(function(){             //jQuery
     $("#load").hide();
-    $("#btn1").click(function(){
+    $("#tp1").click(function(){
         $.ajax({                        //AJAX format
             type:"GET",                 //type mentions the method to be used 
             url :"librarydata.json",         //can provide API link
@@ -9,15 +9,17 @@ $(document).ready(function(){             //jQuery
             },
             success : function(data){
                 $("#load").hide();
+                console.log(data);
+                
                 var card="<div class='card-deck'>";
                 for (var j in data){
-                    card+="<div class='card'> <img class='card-img-top' src=" + data[j].urlToImage + "alt='Card Image cap'>";
+                    card+="<div class='card'> <img class='card-img-top' style='width:50px;height:100px;' src=" + data[j].urlToImage + ">";
                     card+="<div class='card-body'> <h5 class='card-title'>"+ data[j].bookTitle +"</h5>";
-                    card+="<h6 class='card-subtitle mb-2 text-muted'>" + data[j].author +"</h6>";
-                    card+="<p class='card-text'>"+ data[j].description + "</p>";
-                    card+="<p class='card-text'> <span class='font-weight-bold'> Address : </span>  "+ data[j].address.street +", "+ data[j].address.suite +", "+data[j].address.city +", "+data[j].address.zipcode + "</p>";
-                    card+="<a href='#' class='btn btn-primary '>"+ data[j].price+"</a></div></div><br>";
+                    card+="<h6 class='card-subtitle mb-2 text-muted'>" + data[j].author +"</h6> ";
+                    card+="<p class='card-text'>"+ data[j].description + "</p> </div>";
+                    card+="<div class='card-footer'>"+ data[j].price+"</div></div>";
                 }
+                card+="</div>";
                 $(".results").html(card);
             }         
         });
